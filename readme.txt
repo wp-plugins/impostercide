@@ -16,30 +16,30 @@ Impostercide prevents unauthenticated users from "signing" a comment with a regi
 
 ==Changelog==
 
-** version 1.6 **
+**Version 1.6**
 
 * Re-released under GPL (per http://skippy.net/wordpress-plugins-discontinued#comment-8300 )
 * Replaced `die()` with `wp_die()`
 * Changed formatting to look 'pretty'
 
-** Version 1.5 **
+**Version 1.5**
 
 * Initial version by Ipstenu. All I did was change commenting and move it to a subfolder.
 
-** Version 1 **
+**Version 1**
 
 * Impostercide Copyright (c) 2005 Scott Merrill (skippy@skippy.net), discontinued in 2007.
 * many thanks to Mark Jaquith for the name "Impostercide"
 
 == Installation ==
 
-** WordPress Single Site **
+**WordPress Single Site**
 
 1. Unpack the *.zip file and extract the `/impostercide/` folder and the files.
 2. Using an FTP program, upload the full `/impostercide/` folder to your WordPress plugins directory (i.e: `/wp-content/plugins/impostercide/`).
 3. Go to Plugins > Installed and activate the plugin.
 
-** WordPress MultiSite **
+**WordPress MultiSite**
 
 I strongly recommend that you use this as MUST USE only.
 
