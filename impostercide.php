@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: Impostercide
-Plugin URI: http://code.google.com/p/ipstenu/
+Plugin URI: http://code.ipstenu.org/impostercide/
 Description: Impostercide prevents unauthenticated users from "signing" a comment with a registered users email address.
-Version: 1.6
-Author: Mika Epstein
+Version: 1.6.1
+Author: Mika Epstein, Scott Merrill
 Author URI: http://www.ipstenu.org/
 
 Impostercide Copyright (c) 2005 Scott Merrill (skippy@skippy.net)
@@ -37,7 +37,7 @@ if ('' != $comment_type) {
 
 get_currentuserinfo();
 
-if ( ($user_ID > 0) && ($comment_author_email == $user_email) ) {
+if ( is_user_logged_in() ) {
         // It's a logged in user, so it's good.
         return $data;
 }
@@ -48,12 +48,13 @@ if ( ($user_ID > 0) && ($comment_author_email == $user_email) ) {
 $the_login_url = get_bloginfo('url');
 $the_login_url .= "/wp_login.php";
 
+$imposter_message = '<h2>Possible Imposter</h2> <p>You are attempting to post a comment with information (i.e. email, login ID or website URL) belonging to a registered user. If you have an account, please <a href="'.$the_login_url.'">Login</a> to make your comment. Otherwise, please try again with different information.</p>';
+
 // a name was supplied, so let's check the login names
 if ('' != $comment_author) {
         $result = $wpdb->get_var("SELECT count(ID) FROM $wpdb->users WHERE user_login='$comment_author'");
         if ($result > 0) {
-			$bad_author = '<h2>Possible Imposter</h2> <p>The name you provided ('.$comment_author.') belongs to a registered user. Please <a href="'.$the_login_url.'">Login</a> to make your comment.</p>';
-			wp_die( __( $bad_author), 'Error: Imposter Detected' );
+			wp_die( __( $imposter_message), 'Error: Imposter Detected' );
         }
 }
 
@@ -61,8 +62,7 @@ if ('' != $comment_author) {
 if ('' != $comment_author_email) {
         $result = $wpdb->get_var("SELECT count(ID) FROM $wpdb->users WHERE user_email='$comment_author_email'");
         if ($result > 0) {
-			$bad_author_email = '<h2>Possible Imposter</h2> <p>The email address you provided ('.$comment_author_email.') belongs to a registered user. Please <a href="'.$the_login_url.'">Login</a> to make your comment.</p>';
-			wp_die( __( $bad_author_email), 'Error: Imposter Detected' );
+			wp_die( __( $imposter_message), 'Error: Imposter Detected' );
 		}
 }
 
@@ -70,8 +70,7 @@ if ('' != $comment_author_email) {
 if ('' != $comment_author_url) {
         $result = $wpdb->get_var("SELECT count(ID) FROM $wpdb->users WHERE user_url='$comment_author_url'");
         if ($result > 0) {
-			$bad_author_url = '<h2>Possible Imposter</h2> <p>The URL you provided ('.$comment_author_url.') belongs to a registered user. Please <a href="'.$the_login_url.'">Login</a> to make your comment.</p>';
-			wp_die( __( $bad_author_url), 'Error: Imposter Detected' );
+			wp_die( __( $imposter_message), 'Error: Imposter Detected' );
         }
 }
 

@@ -1,10 +1,10 @@
 === Impostercide ===
 Tags: comments, spoof, imposter
-Contributors: skippy, ipstenu
+Contributors: ipstenu, skippy
 Requires at least: 2.1
 Tested up to: 3.0
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5227973
-Stable tag: 1.6
+Stable tag: 1.6.1
 
 Impostercide prevents unauthenticated users from "signing" a comment with a registered users email addrress.
 
@@ -16,6 +16,11 @@ Impostercide prevents unauthenticated users from "signing" a comment with a regi
 
 ==Changelog==
 
+**Version 1.6.1**
+
+* Switched logged in check to is_user_logged_in()  (thanks Chip!)
+* Genericized the error message (again, Chip)
+
 **Version 1.6**
 
 * Re-released under GPL (per http://skippy.net/wordpress-plugins-discontinued#comment-8300 )
@@ -24,7 +29,7 @@ Impostercide prevents unauthenticated users from "signing" a comment with a regi
 
 **Version 1.5**
 
-* Initial version by Ipstenu. All I did was change commenting and move it to a subfolder.
+* Initial version by Ipstenu. All I did was change commenting and move it to a subfolder. (This was only ever released on my websites)
 
 **Version 1**
 
@@ -50,11 +55,12 @@ I strongly recommend that you use this as MUST USE only.
 
 = Will this work on older versions of WordPress? =
 
-Yes.
+This will work on WordPress from version 2.1 and up.
 
 = Will this work on MultiSite? =
 
 Again, yes.  I suggest putting it in `mu-plugins`, but it works fine both ways.
+
 
 == Screenshots ==
 1. Error message when you try and post as a registered user
