@@ -1,8 +1,8 @@
 === Impostercide ===
-Tags: comments, spoof, imposter
 Contributors: ipstenu, skippy
+Tags: comments, spoof, imposter
 Requires at least: 2.1
-Tested up to: 3.0
+Tested up to: 3.0.1
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5227973
 Stable tag: 1.6.1
 
