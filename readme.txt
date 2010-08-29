@@ -1,9 +1,9 @@
 === Impostercide ===
-Contributors: ipstenu, skippy
+Contributors: Ipstenu
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5227973
 Tags: comments, spoof, imposter
 Requires at least: 2.1
 Tested up to: 3.0.1
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5227973
 Stable tag: 1.6.1
 
 Impostercide prevents unauthenticated users from "signing" a comment with a registered users email addrress.
