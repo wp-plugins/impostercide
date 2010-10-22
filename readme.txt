@@ -1,5 +1,5 @@
 === Impostercide ===
-Tags: comments, spoof, imposter
+Tags: comments, spoof, imposter, multisite
 Contributors: Ipstenu, skippy
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5227973
 Requires at least: 2.1
