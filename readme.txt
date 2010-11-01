@@ -1,7 +1,6 @@
 === Impostercide ===
 Tags: comments, spoof, imposter, multisite
 Contributors: Ipstenu, skippy
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5227973
 Requires at least: 2.1
 Tested up to: 3.0.1
 Stable tag: 1.6.1
@@ -12,7 +11,11 @@ Impostercide prevents unauthenticated users from "signing" a comment with a regi
 
 **This was written by Scott Merrill, AKA Skippy, who left the WordPress project in 2007.  After rescuing this plugin, I began to use it on a couple sites, and decided to take care of it as best I could. I take no credit for the coolness.**
 
-Impostercide prevents unauthenticated users from "signing" a comment with a registered users email address, name or URL.
+Impostercide prevents unauthenticated users from "signing" a comment with a registered users email address, name or URL.  There is no interface from the admin's end, no options to select.  Simply install, turn it on, and watch the spammers get stopped.
+
+**Misc**
+* [Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5227973)
+* [Plugin Site](http://code.ipstenu.org/impostercide/)
 
 ==Changelog==
 
@@ -60,6 +63,10 @@ This will work on WordPress from version 2.1 and up.
 = Will this work on MultiSite? =
 
 Again, yes.  I suggest putting it in `mu-plugins`, but it works fine both ways.
+
+= Can this catch innocents? =
+
+Yes, but ... well. The only person I've caught is someone who is, apparently, pathalogically incapable of remembering that he HAS an account on the site, and he needs to LOG IN with said account. He also claims to forget his password and that WordPress doesn't email it to him, so I'm pretty much chucking his complaint as a problem with the user, and not the tool.
 
 
 == Screenshots ==
