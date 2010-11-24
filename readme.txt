@@ -1,19 +1,18 @@
 === Impostercide ===
-Tags: comments, spoof, imposter, multisite
+Tags: comments, spoof, imposter, multisite, wpmu
 Contributors: Ipstenu, skippy
 Requires at least: 2.1
-Tested up to: 3.0.1
+Tested up to: 3.1
 Stable tag: 1.6.1
 
 Impostercide prevents unauthenticated users from "signing" a comment with a registered users email addrress.
 
 == Description ==
 
-**This was written by Scott Merrill, AKA Skippy, who left the WordPress project in 2007.  After rescuing this plugin, I began to use it on a couple sites, and decided to take care of it as best I could. I take no credit for the coolness.**
-
 Impostercide prevents unauthenticated users from "signing" a comment with a registered users email address, name or URL.  There is no interface from the admin's end, no options to select.  Simply install, turn it on, and watch the spammers get stopped.
 
 **Misc**
+
 * [Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5227973)
 * [Plugin Site](http://code.ipstenu.org/impostercide/)
 
