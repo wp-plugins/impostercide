@@ -3,7 +3,7 @@
 Plugin Name: Impostercide
 Plugin URI: http://code.ipstenu.org/impostercide/
 Description: Impostercide prevents unauthenticated users from "signing" a comment with a registered users email address.
-Version: 1.6.1
+Version: 1.6.2
 Author: Mika Epstein, Scott Merrill
 Author URI: http://www.ipstenu.org/
 
@@ -48,7 +48,7 @@ if ( is_user_logged_in() ) {
 $the_login_url = get_bloginfo('url');
 $the_login_url .= "/wp_login.php";
 
-$imposter_message = '<h2>Possible Imposter</h2> <p>You are attempting to post a comment with information (i.e. email, login ID or website URL) belonging to a registered user. If you have an account, please <a href="'.$the_login_url.'">Login</a> to make your comment. Otherwise, please try again with different information.</p>';
+$imposter_message = '<h2>Possible Imposter</h2> <p>You are attempting to post a comment with information (i.e. email address or login ID) belonging to a registered user. If you have an account on this site, please <a href="'.$the_login_url.'">Login</a> to make your comment. Otherwise, please try again with different information.</p>';
 
 // a name was supplied, so let's check the login names
 if ('' != $comment_author) {
@@ -64,14 +64,6 @@ if ('' != $comment_author_email) {
         if ($result > 0) {
 			wp_die( __( $imposter_message), 'Error: Imposter Detected' );
 		}
-}
-
-// a URL was supplied, so let's check that
-if ('' != $comment_author_url) {
-        $result = $wpdb->get_var("SELECT count(ID) FROM $wpdb->users WHERE user_url='$comment_author_url'");
-        if ($result > 0) {
-			wp_die( __( $imposter_message), 'Error: Imposter Detected' );
-        }
 }
 
 return $data;

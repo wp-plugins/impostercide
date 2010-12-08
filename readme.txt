@@ -3,7 +3,7 @@ Tags: comments, spoof, imposter, multisite, wpmu
 Contributors: Ipstenu, skippy
 Requires at least: 2.1
 Tested up to: 3.1
-Stable tag: 1.6.1
+Stable tag: 1.6.2
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5227973
 
 Impostercide prevents unauthenticated users from "signing" a comment with a registered users email addrress.
@@ -18,6 +18,10 @@ Impostercide prevents unauthenticated users from "signing" a comment with a regi
 * [Plugin Site](http://code.ipstenu.org/impostercide/)
 
 ==Changelog==
+
+**Version 1.6.2 (8 Dec 2010)**
+
+* Removed the check on URL. Why? Cause sometimes people have the same URL as other.  Like when they share a site.
 
 **Version 1.6.1**
 
