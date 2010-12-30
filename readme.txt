@@ -1,6 +1,6 @@
 === Impostercide ===
-Tags: comments, spoof, imposter, multisite, wpmu
 Contributors: Ipstenu, skippy
+Tags: comments, spoof, imposter, multisite, wpmu
 Requires at least: 2.1
 Tested up to: 3.1
 Stable tag: 1.6.1
