@@ -10,7 +10,7 @@ Impostercide prevents unauthenticated users from "signing" a comment with a regi
 
 == Description ==
 
-Impostercide prevents unauthenticated users from "signing" a comment with a registered users email address, name or URL.  There is no interface from the admin's end, no options to select.  Simply install, turn it on, and watch the spammers get stopped.
+Impostercide prevents unauthenticated users from "signing" a comment with a registered users email address, name or URL.  There is no interface from the admin's end, no options to select.  Simply install, turn it on, and watch the spoofers get stopped.
 
 **Misc**
 
@@ -21,7 +21,7 @@ Impostercide prevents unauthenticated users from "signing" a comment with a regi
 
 **Version 1.6.2 (8 Dec 2010)**
 
-* Removed the check on URL. Why? Cause sometimes people have the same URL as other.  Like when they share a site.
+* Removed the check on URL. Why? Cause sometimes people have the same URL as other.  Like when they share a site. (Sorry RonAndAndrea!)
 
 **Version 1.6.1**
 
