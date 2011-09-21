@@ -15,7 +15,7 @@ Impostercide prevents unauthenticated users from "signing" a comment with a regi
 **Misc**
 
 * [Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5227973)
-* [Plugin Site](http://code.ipstenu.org/impostercide/)
+* [Plugin Site](http://tech.ipstenu.org/my-plugins/impostercide/)
 
 ==Changelog==
 
