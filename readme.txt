@@ -21,7 +21,9 @@ Impostercide prevents unauthenticated users from "signing" a comment with a regi
 
 = 1.7 =
 * 4 October 2011 by Ipstenu
-* 3.3 compat check, minor cleanup, licencing.
+* 3.3 compat check
+* minor cleanup
+* licencing
 
 = 1.6.2 =
 * 8 Dec 2010 by Ipstenu
@@ -29,7 +31,7 @@ Impostercide prevents unauthenticated users from "signing" a comment with a regi
 
 = 1.6.1 =
 * By Ipstenu
-* Switched logged in check to is_user_logged_in()  (thanks Chip!)
+* Switched logged in check to is_user_logged_in() (thanks Chip!)
 * Genericized the error message (again, Chip)
 
 = 1.6 =
