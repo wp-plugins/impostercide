@@ -3,23 +3,27 @@
 Plugin Name: Impostercide
 Plugin URI: http://tech.ipstenu.org/my-plugins/impostercide/
 Description: Impostercide prevents unauthenticated users from "signing" a comment with a registered users email address.
-Version: 1.6.2
+Version: 1.7
 Author: Mika Epstein, Scott Merrill
 Author URI: http://www.ipstenu.org/
 
-Impostercide Copyright (c) 2005 Scott Merrill (skippy@skippy.net)
-Taken over in 2010 by Mika Epstein (ipstenu@ipstenu.org) under GPL provisons
+Copyright 2005-07 Scott Merrill (skippy@skippy.net)
+Copyright 2010-11 Mika Epstein (email: ipstenu@ipstenu.org)
 
-        This plugin is free software; you can redistribute it and/or modify
-        it under the terms of the GNU General Public License as published by
-        the Free Software Foundation; either version 2 of the License, or
-        (at your option) any later version.
+    This file is part of Impostercide, a plugin for WordPress.
 
-        This plugin is distributed in the hope that it will be useful,
-        but WITHOUT ANY WARRANTY; without even the implied warranty of
-        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-        GNU General Public License for more details.
+    Impostercide is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    Impostercide is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with WordPress.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 add_filter ('preprocess_comment', 'sdm_protect_email');
@@ -42,13 +46,7 @@ if ( is_user_logged_in() ) {
         return $data;
 }
 
-// if we've made it this far, then we don't know who this commenter is.
-
-// Let's get the login URL, we'll need this later
-$the_login_url = get_bloginfo('url');
-$the_login_url .= "/wp_login.php";
-
-$imposter_message = '<h2>Possible Imposter</h2> <p>You are attempting to post a comment with information (i.e. email address or login ID) belonging to a registered user. If you have an account on this site, please <a href="'.$the_login_url.'">Login</a> to make your comment. Otherwise, please try again with different information.</p>';
+$imposter_message = '<h2>Possible Imposter</h2> <p>You are attempting to post a comment with information (i.e. email address or login ID) belonging to a registered user. If you have an account on this site, please login to make your comment. Otherwise, please try again with different information.</p>';
 
 // a name was supplied, so let's check the login names
 if ('' != $comment_author) {

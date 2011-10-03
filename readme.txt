@@ -2,7 +2,7 @@
 Contributors: Ipstenu, skippy
 Tags: comments, spoof, imposter, multisite, wpmu
 Requires at least: 2.1
-Tested up to: 3.2.1
+Tested up to: 3.3
 Stable tag: 1.6.2
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5227973
 
@@ -19,44 +19,36 @@ Impostercide prevents unauthenticated users from "signing" a comment with a regi
 
 ==Changelog==
 
-**Version 1.6.2 (8 Dec 2010)**
+= 1.7 =
+* 4 October 2011 by Ipstenu
+* 3.3 compat check, minor cleanup, licencing.
 
+= 1.6.2 =
+* 8 Dec 2010 by Ipstenu
 * Removed the check on URL. Why? Cause sometimes people have the same URL as other.  Like when they share a site. (Sorry RonAndAndrea!)
 
-**Version 1.6.1**
-
+= 1.6.1 =
+* By Ipstenu
 * Switched logged in check to is_user_logged_in()  (thanks Chip!)
 * Genericized the error message (again, Chip)
 
-**Version 1.6**
-
+= 1.6 =
+* By Ipstenu
 * Re-released under GPL (per http://skippy.net/wordpress-plugins-discontinued#comment-8300 )
 * Replaced `die()` with `wp_die()`
 * Changed formatting to look 'pretty'
 
-**Version 1.5**
-
+= 1.5 =
+* July 2011 by Ipstenu
 * Initial version by Ipstenu. All I did was change commenting and move it to a subfolder. (This was only ever released on my websites)
 
-**Version 1**
-
-* Impostercide Copyright (c) 2005 Scott Merrill (skippy@skippy.net), discontinued in 2007.
+= 1.0 =
+* 2005 Scott Merrill (skippy@skippy.net), discontinued in 2007.
 * many thanks to Mark Jaquith for the name "Impostercide"
 
 == Installation ==
 
-**WordPress Single Site**
-
-1. Unpack the *.zip file and extract the `/impostercide/` folder and the files.
-2. Using an FTP program, upload the full `/impostercide/` folder to your WordPress plugins directory (i.e: `/wp-content/plugins/impostercide/`).
-3. Go to Plugins > Installed and activate the plugin.
-
-**WordPress MultiSite**
-
-I strongly recommend that you use this as MUST USE only.
-
-1. Unpack the *.zip file and extract the `/impostercide/` folder and the files.
-2. Using an FTP program, copy ONLY `impostercide.php` file to your WordPress Must Use plugins directory (i.e: `/wp-content/mu-plugins/impostercide.php`).
+No special instructions.
 
 == Frequently Asked Questions ==
 
