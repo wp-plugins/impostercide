@@ -6,7 +6,7 @@ Tested up to: 3.3
 Stable tag: 1.7
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5227973
 
-Impostercide prevents unauthenticated users from "signing" a comment with a registered users email addrress.
+Impostercide prevents unauthenticated users from "signing" a comment with a registered users' email addrress.
 
 == Description ==
 
