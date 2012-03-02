@@ -68,4 +68,15 @@ return $data;
 }
 endif;
 
+// donate link on manage plugin page
+add_filter('plugin_row_meta', 'impostercide_donate_link', 10, 2);
+function impostercide_donate_link($links, $file) {
+        if ($file == plugin_basename(__FILE__)) {
+                $donate_link = '<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ipstenu%40ipstenu%2eorg">Donate</a>';
+                $links[] = $donate_link;
+        }
+        return $links;
+}
+
+
 ?>
