@@ -3,7 +3,7 @@
 Plugin Name: Impostercide
 Plugin URI: http://tech.ipstenu.org/my-plugins/impostercide/
 Description: Impostercide prevents unauthenticated users from "signing" a comment with a registered users' email address.
-Version: 1.7
+Version: 1.8
 Author: Mika Epstein, Scott Merrill
 Author URI: http://www.ipstenu.org/
 
