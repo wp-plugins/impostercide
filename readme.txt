@@ -73,3 +73,4 @@ Yes, but ... well. The only person I've caught is someone who is, apparently, pa
 
 == Screenshots ==
 1. Error message when you try and post as a registered user
+2. One of these things is not like the other...
