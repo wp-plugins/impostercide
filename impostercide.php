@@ -3,7 +3,7 @@
 Plugin Name: Impostercide
 Plugin URI: http://halfelf.org/plugins/impostercide/
 Description: Impostercide prevents unauthenticated users from "signing" a comment with a registered users' email address.
-Version: 1.8
+Version: 2.0
 Author: Mika Epstein, Scott Merrill
 Author URI: http://www.ipstenu.org/
 Network: true
@@ -54,6 +54,7 @@ if ( is_user_logged_in() ) {
         return $data;
 }
 
+// Make this customizable
 $imposter_message = '<h2>' . __('Possible Imposter', 'ippy_impostercide') .'</h2> <p>' . __('You are attempting to post a comment with information (i.e. email address or login ID) belonging to a registered user. If you have an account on this site, please login to make your comment. Otherwise, please try again with different information.', 'ippy_impostercide') .'</p>';
 
 $imposter_error = __('Error: Imposter Detected');
@@ -82,7 +83,7 @@ endif;
 add_filter('plugin_row_meta', 'impostercide_donate_link', 10, 2);
 function impostercide_donate_link($links, $file) {
         if ($file == plugin_basename(__FILE__)) {
-                $donate_link = '<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ipstenu%40ipstenu%2eorg">Donate</a>';
+                $donate_link = '<a href="https://www.wepay.com/donations/halfelf-wp">Donate</a>';
                 $links[] = $donate_link;
         }
         return $links;
