@@ -2,7 +2,7 @@
 Contributors: Ipstenu, skippy
 Tags: comments, spoof, imposter, multisite, wpmu
 Requires at least: 2.1
-Tested up to: 4.0
+Tested up to: 4.1
 Stable tag: 1.8
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5227973
 
